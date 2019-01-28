@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/zzsc.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/zzsc.js"></script>
+    <script type="text/javascript" src="../../js/jquery.colorbox-min.js"></script>
+</head>
+<body style="background: #FFFFFF;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>6</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="w12 shop_cart clearfix">
+	<p class="prodetails_dh"><a href="index.html">首页</a>＞<a href="integral.html">积分商品＞</a><a href="#">西班牙干红葡萄酒</a></p>
+    <div class="con-FangDa" id="fangdajing">
+	  <div class="con-fangDaIMg">
+	  	<!-- 正常显示的图片-->
+	  	<img src="../../images/testimg/prodetails1.png">
+	    <!-- 滑块-->  
+	    <div class="magnifyingBegin"></div>
+	    <!-- 放大镜显示的图片 -->
+	    <div class="magnifyingShow"><img src="../../images/testimg/prodetails1.png"></div>
+	  </div>
+	  <ul class="con-FangDa-ImgList">
+	    <!-- 图片显示列表 -->
+	    <li class="active"><img src="../../images/testimg/prodetails_m1.png" data-bigimg="../../images/testimg/prodetails1.png"></li>
+	    <li><img src="../../images/testimg/prodetails_m2.png" data-bigimg="../../images/testimg/prodetails2.png"></li>
+	    <li><img src="../../images/testimg/prodetails_m3.png" data-bigimg="../../images/testimg/prodetails1.png"></li>
+	    <li><img src="../../images/testimg/prodetails_m4.png" data-bigimg="../../images/testimg/prodetails2.png"></li>
+	    <li><img src="../../images/testimg/prodetails_m5.png" data-bigimg="../../images/testimg/prodetails1.png"></li>
+	  </ul>
+	</div>
+	<div class="prodetails">
+		<h3>西班牙干红葡萄酒，原瓶进口法国红酒aoc级礼盒送礼</h3>
+		<p class="prod1">法国醉高等级AOC级 A套餐送酒具 B套餐送木箱 二选一</p>
+		<div class="prod2">
+			<p class="shichang">市场价<span>¥128.00</span></p>
+			<p class="jifen">积分价<span>128积分</span></p>
+		</div>
+		<p class="prod3">运费<span>免运费</span><b>48小时内发货</b></p>
+		<p class="prod3">规格<a class="active">500ml</a><a>750ml</a></p>
+		<form><p>数量<a class="reduce">-</a><input onkeyup="value=value.replace(/[^\d]/g,'')" type="text" value="2"/><a class="add">+</a><span>仅剩<b>10</b>件，抓紧时间购买哦！</span></p></form>
+		<p class="prod4"><a class="gwc" href="shoppingcart_Declaration.html"><img src="../../images/static/cart2.png" />&nbsp;&nbsp;加入购物车</a><a class="ljgm" href="confirm_Order.html">立即购买</a></p>
+		<div class="prod5">
+			<p><b>·</b>累计消费满188积分即可再次参加全国公排</p>
+			<p><b>·</b>交易成功后自动参加全国公排，出局还送积分</p>
+		</div>
+	</div>
+	<div class="otherpro">
+		<p> —— 看了又看  —— </p>
+		<ul>
+			<li><a href="#"><img src="../../images/testimg/otherpro1.png"/><span>128积分</span></a></li>
+			<li><a href="#"><img src="../../images/testimg/otherpro2.png"/><span>128积分</span></a></li>
+			<li><a href="#"><img src="../../images/testimg/otherpro3.png"/><span>128积分</span></a></li>
+		</ul>
+	</div>
+	<p class="procode">商品货号：MSECS000160</p>
+	
+	<div class="commodity">
+	    <h3><img src="../../images/testimg/commodity.png"/></h3>
+	    <div class="formwork">
+	    	<img src="../../images/testimg/commodity_show.png" />
+	    </div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script>
+	$(function(){
+        $(".prod3 a").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
+	
+    $(document).ready(function(){
+		$(".add").click(function(){
+			var oldValue=parseInt($(this).prev("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      oldValue++;//自加1
+                      $(this).prev("input").val(oldValue);//将增加后的值付给原控件
+		});
+		$(".reduce").click(function(){
+			var oldValue=parseInt($(this).next("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      if(oldValue>1){
+                      oldValue--;//自减1
+                      $(this).next("input").val(oldValue);//将增加后的值付给原控件
+                      }
+                      else{
+                      	$(this).next("input").val("1");
+                      }
+		});
+	});
+</script>
+</html>

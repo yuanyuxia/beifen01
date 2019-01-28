@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>首页</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../libs/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+       <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+       <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+         <div class="indexStatus fr">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="regist.html">注册</a>
+        </div>
+        <div class="shopping_cart hide">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>2</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr hide">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div class="slider indexbanner">
+    <div class="hd">
+        <ul class="sliderBtn"></ul>
+    </div>
+    <div class="bd">
+        <ul class="sliderBox clearfix">
+            <li class="sliderlist"><a><img src="../../images/testimg/banner1.jpg"/></a></li>
+            <li class="sliderlist"><a><img src="../../images/testimg/banner2.png"/></a></li>
+            <li class="sliderlist"><a><img src="../../images/testimg/banner3.png"/></a></li>
+            <li class="sliderlist"><a><img src="../../images/testimg/banner4.png"/></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        myslider();
+
+        $(".slider").slide({
+            effect:"fold",
+            titCell:".hd ul",
+            mainCell:".bd ul",
+            autoPlay:true,
+            autoPage:"<li><a></a></li>"
+        });
+    });
+
+    $(window).resize(function () {
+        myslider();
+    });
+
+    function myslider() {
+        var winW = $(window).width();
+        var liL = $(".sliderBox li").length;
+        $(".sliderBox li").width(winW);
+        $(".sliderBox").width(liL*winW);
+    }
+</script>
+<div class="index_market">
+	<h1><img src="../../images/static/index_header1.png"/></h1>
+	<div class="marketCon">
+	    <div class="marketBox w12">
+	        <div class="marketDisplay clearfix">
+	            <a class="marketImg marginTop">
+	                <img  class="marketImgB" src="../../images/testimg/shangcheng_pic01.png"/>
+	                <div class="marketImgS">
+	                    <img src="../../images/testimg/shangcheng_pic05.png"/>
+	                </div>
+	            </a>
+	            <a class="marketImg marginTop">
+	                <img  class="marketImgB" src="../../images/testimg/shangcheng_pic02.png"/>
+	                <div class="marketImgS">
+	                    <img src="../../images/testimg/shangcheng_pic06.png"/>
+	                </div>
+	            </a>
+	            <a class="marketImg marginTop">
+	                <img  class="marketImgB" src="../../images/testimg/shangcheng_pic03.png"/>
+	                <div class="marketImgS">
+	                    <img src="../../images/testimg/shangcheng_pic07.png"/>
+	                </div>
+	            </a>
+	            <a class="marketImg marginTop">
+	                <img  class="marketImgB" src="../../images/testimg/shangcheng_pic04.png"/>
+	                <div class="marketImgS">
+	                    <img src="../../images/testimg/shangcheng_pic05.png"/>
+	                </div>
+	            </a>
+	        </div>
+	    </div>
+    </div>
+</div>
+<div class="index_integral">
+	<div class="integralBox">
+	    <div class="integralBloc">
+	    	<h1><img src="../../images/static/index_header2.png"/></h1>
+	        <div class="integral_con clearfix">
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	            <a class="integralA" href="product_Details.html">
+	                <img class="integralImg" src="../../images/testimg/integral1.png" alt="">
+	                <div class="integralTip">
+	                    <p class="integralTitle">圣芝红酒法国银奖干红原瓶进口珍藏波尔多AOC红葡萄酒类整</p>
+	                    <p class="integralprice clearfix"><span class="fl">188积分</span><label class="fr">月销量：240件</label></p>
+	                </div>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+</div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+</html>

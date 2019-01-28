@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>购物车-积分商品</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <!--<script type="text/javascript" src="../../js/base.js"></script>-->
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body style="background: #EEEEEE;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"><span class="gouwuche">购物车</span></a>
+        <ul class="indexNav fl">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>6</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="w12 shop_cart clearfix">
+	<div class="cart_head clearfix">
+		<p><span>1</span> 我的购物车  ——— <span>2</span> 填写核对订单信息  ——— <span>3</span> 成功提交订单</p>
+	</div>
+    <div class="cart_con">
+    	<h3 class="clearfix">
+    		<p><a href="shoppingcart_Declaration.html">报单商品<span>4</span></a></p>
+    		<p class="on"><a href="shoppingcart_Integral.html">积分商品<span>2</span></a></p>
+    	</h3>
+    	<div class="cart_table">
+	        <div class="cart_tab">
+		    	<p class="cart_th pconInfoTime">
+		        	<label class="checkAll qdscon"><i class="checkAllIcon"></i>全选</label>
+		        	<label class="">商品信息 </label>
+		        	<label class="">单价</label>
+		        	<label class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+		        	<label class="">金额</label>
+		        	<label class="">操作</label>
+		        </p>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1">
+		               <i class="checkAllIcon active"></i>
+		               <a class="cartImg" href="product_Details.html"><img class="cancelImg" src="../../images/testimg/cancelpic3.png"></a>
+		               	<div class="cancelInfo">
+		                	<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml</a>
+		                	<p>颜色：粉色</p>
+		                	<p>容量：750ml</p>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">632积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1">
+		               <i class="checkAllIcon"></i>
+		               <a class="cartImg"><img src="../../images/testimg/cancelpic2.png"></a>
+		               	<div class="cancelInfo">
+		                	<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml</a>
+		                	<p>颜色：粉色</p>
+		                	<p>容量：750ml</p>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input onkeyup="value=value.replace(/[^\d]/g,'')" type="text" value="1"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1">
+		               <i class="checkAllIcon"></i>
+		               <a class="cartImg" href="product_Details.html"><img class="cancelImg" src="../../images/testimg/cancelpic1.png"></a>
+		               	<div class="cancelInfo">
+		                	<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml</a>
+		                	<p>颜色：粉色</p>
+		                	<p>容量：750ml</p>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input onkeyup="value=value.replace(/[^\d]/g,'')" type="text" value="1"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1">
+		               <i class="checkAllIcon"></i>
+		               <a class="cartImg" href="product_Details.html"><img class="cancelImg" src="../../images/testimg/cancelpic1.png"></a>
+		               	<div class="cancelInfo">
+		                	<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml</a>
+		                	<p>颜色：粉色</p>
+		                	<p>容量：750ml</p>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" onkeyup="value=value.replace(/[^\d]/g,'')" value="1"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list invalid clearfix">
+		            <p class="welfare"><span class="invalid">失效商品</span>对不起，宝贝已失效</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1">
+		               <i class="checkAllIcon"></i>
+		               <a class="cartImg" href="product_Details.html"><img class="cancelImg" src="../../images/testimg/cancelpic3.png"></a>
+		               	<div class="cancelInfo">
+		                	<a href="###">罗利干红500ml<br/>罗利干红500ml</a>
+		                	<p>颜色：粉色</p>
+		                	<p>容量：750ml</p>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316积分</span>
+		            <span class="cartlistpro_con clinput">1</span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="settlement">
+		        	<label class="checkAll"><i class="checkAllIcon_fix"></i>全选</label>
+		        	<a>批量删除</a>
+		        	<div class="settlementcon">
+			        	<span class="setcon_checked">已选商品<b>2</b>件</span>
+			        	<span class="setcon_total">总价（不含运费）：<b>632积分</b></span>
+			        	<a class="selt_btn" href="confirm_Order.html">去结算</a>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+		$(".add").click(function(){
+			var oldValue=parseInt($(this).prev("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      oldValue++;//自加1
+                      $(this).prev("input").val(oldValue);//将增加后的值付给原控件
+		});
+		$(".reduce").click(function(){
+			var oldValue=parseInt($(this).next("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      if(oldValue>1){
+                      oldValue--;//自减1
+                      $(this).next("input").val(oldValue);//将增加后的值付给原控件
+                      }
+                      else{
+                      	$(this).next("input").val("1");
+                      }
+		});
+	});
+	
+	
+	$(".checkAllIcon").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    $(".checkAllIcon_fix").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    
+    $(".checkAll .checkAllIcon").on("click",function(){
+        for(var i = 0;i < $(".cartlist_pro .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon").hasClass("active")){
+                $(".cartlist_pro .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon_fix").addClass("active");
+            }else{
+                $(".cartlist_pro .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon_fix").removeClass("active");
+            }
+        }
+    });
+    $(".checkAll .checkAllIcon_fix").on("click",function(){
+        for(var i = 0;i < $(".cartlist_pro .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon_fix").hasClass("active")){
+                $(".cartlist_pro .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon").addClass("active");
+            }else{
+                $(".cartlist_pro .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon").removeClass("active");
+            }
+        }
+    });
+    
+    $(".cartlist_pro .checkAllIcon").on("click",function(){
+        for(var i = 0;i < $(".cartlist_pro .checkAllIcon").length;i++){
+            if($(".cartlist_pro .checkAllIcon.active").length == $(".cartlist_pro .checkAllIcon").length){
+                $(".checkAll .checkAllIcon,.checkAll .checkAllIcon_fix").addClass("active");
+            }else{
+                $(".checkAll .checkAllIcon,.checkAll .checkAllIcon_fix").removeClass("active");
+            }
+        }
+    });
+	
+	$(function(){
+		var height = $(window).height();
+		var body = $(document.body).height();
+		if(body > height){
+			$(window).scroll(function() { //侦听滚动时 
+				var i = body-height;
+		        var scrolls = $(window).scrollTop(); 
+		        if (i > scrolls) { 
+		                $(".settlement").css({"position":"fixed","bottom":"0px"});
+		            } 
+		        else { 
+		            $(".settlement").css({"position":"relative"});
+		        } 
+		    }); 
+	    }
+		else{
+			$(".settlement").css({"position":"relative"});
+		}
+	})
+</script>
+</html>

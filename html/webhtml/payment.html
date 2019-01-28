@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>支付</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+</head>
+<body style="background: #F1F1F1;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>6</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="w12 shop_cart clearfix">
+	<div class="cart_head clearfix">
+		<p><span>1</span> 我的购物车  ——— <span>2</span> 填写核对订单信息  ——— <span>3</span> 成功提交订单</p>
+	</div>
+    <div class="confirm_con method divshadow">
+    	<p class="con_head">支付方式</p>
+    	<form>
+    		<div class="paybox">
+	    		<input type="radio" checked="checked" />
+	    		<label>
+	    			<span class="channel_name">余额支付</span>
+	    			<span class="card_number">15538904563</span>
+	    			<span class="card_type">账户</span>
+	    			<span class="card_info">支付<b>632</b>积分</span>
+	    		</label>
+    		</div>
+    		<div class="pay_psdbox">
+	    		<p class="pay_psd">支付密码</p>
+	    		<input type="text" />
+	    		<a class="forget_psd" href="#">忘记密码？</a>
+	    		<p class="input_psd">请输入6-18位支付密码</p>
+    		</div>
+    		<a class="payment_btn" href="successful_Payment.html">确认付款</a>
+    	</form>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+</html>

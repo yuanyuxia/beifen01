@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>注册</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+</head>
+<body>
+<div class="login">
+    <div class="loginHeader divshadow">
+        <div class="loginHeaderCon w12">
+            <a href="index.html"><img src="../../images/static/icons/icon_logo.png" class="l_logo" /></a>
+            <span>188惠民工程</span>
+        </div>
+    </div>
+    <div class="loginCon">
+        <div class="loginConBg">
+            <ul>
+                <li><img src="../../images/static/regist_bg.png"></li>
+            </ul>
+        </div>
+        <div class="registConForm">
+            <h2 class="registTitle">注册账号</h2>
+            <form>
+                <div class="regDiv regName">
+                    <label>姓名 :</label>
+                    <span><input type="text" placeholder="请输入你的真实姓名"></span>
+                </div>
+                <div class="regDiv regCard">
+                    <label>身份证 :</label>
+                    <span><input type="text" placeholder="请输入你的身份证号"></span>
+                </div>
+                <div class="regDiv regNum">
+                    <label>手机号 :</label>
+                    <p class="clearfix">
+                        <span class="fl"><input type="text" placeholder="请输入手机号"></span><a class="fr">发送验证码</a>
+                    </p>
+                </div>
+                <div class="regDiv regCode">
+                    <label>验证码 :</label>
+                    <span><input type="text" placeholder="请输入手机验证码"></span>
+                </div>
+                <div class="regDiv regPsd">
+                    <label>密码 :</label>
+                    <span><input type="password" placeholder="请输入密码6-20位，数字、字母、字符组合"></span>
+                </div>
+                <div class="regDiv regPsd">
+                    <label>确认密码 :</label>
+                    <span><input type="password" placeholder="请确认密码"></span>
+                </div>
+                <div class="regDiv regInvite">
+                    <label>邀请码 :</label>
+                    <span><input type="text" placeholder="推荐人邀请码（选填）"><a>邀请人</a></span>
+                </div>
+                <div class="regDiv regAgreen">
+                    <label></label>
+                    <span><i class="selectImg active"></i>我已阅读并同意 <a class="agree">《会员消费协议书》</a></span>
+                </div>
+                <div class="regDiv regBtn"><label></label><a>立即注册</a></div>
+            </form>
+        </div>
+    </div>
+    <!--页脚-->
+    <div class="loginFooter">
+        <p class="w12"><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+    $(window).load(function () {
+        footerPos();
+    });
+    $(window).resize(function () {
+        footerPos();
+    });
+    function footerPos() {
+        var windowH = $(window).outerHeight();
+        var footerH = $(".loginFooter").outerHeight();
+        var headerH = $(".loginHeader").outerHeight();
+        var middleH = windowH-footerH-headerH-16;
+        //console.log(middleH);
+        if(middleH>700){
+            $(".loginCon").css({"height":middleH+"px"});
+        }else{
+            $(".loginCon").css({"height":"742px"});
+        }
+    };
+    $(function(){
+    	/*失去焦点输入框变色*/
+    	for(var i=0;i<$(".regDiv span input").length;i++){
+    		$(".regDiv span input").focus(function(){
+	    		$(this).parents(".regDiv").find("span").css("border","1px solid #dc3336");
+	    		$(".regAgreen span").css("border","none");
+	    	});
+	    	$(".regDiv span input").blur(function(){
+	    		$(this).parents(".regDiv").find("span").css("border","1px solid #ddd");
+	    	});
+    	}
+    	/*选中状态切换*/
+    	$(".selectImg").on("click",function(){
+    		$(this).toggleClass("active");
+    	});
+    });
+    
+    $(function(){
+       $(".agree").click(function () {
+        layer.open({
+            type: 2,
+            //page层
+            area: ['950px', '600px'],
+            title: '注册协议',
+            shade: 0.6,//遮罩透明度
+            shadeClose:true,//点击遮罩关闭层
+            moveType: 1,//拖拽风格，0是默认，1是传统拖动
+            fix:true,//不随滚动条滚动，一直在可视区域。
+            border:[0],
+            closeBtn:1,
+            content: ['regist_agreement.html'],
+        });
+    });
+    }); 
+    
+</script>
+</body>
+</html>

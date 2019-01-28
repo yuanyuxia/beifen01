@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>充值到银行卡</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body style="background: #F1F1F1;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>2</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="qcenter w12 clearfix">
+    <!--左侧导航-->
+    <div class="qnav fl">
+        <h2 class="divshadow userCen"><a href="personal_Center.html"><i></i>会员中心</a></h2>
+        <div class="qnav_item qnav_indent">
+            <h3><a><i></i>我的订单<em></em></a></h3>
+            <ul>
+                <li><a href="qindentPay.html">· 待付款</a></li>
+                <li><a href="qindentSend.html">· 待发货</a></li>
+                <li><a href="qindentReceive.html">· 待收货</a></li>
+                <li><a href="completed_Orders.html">· 已完成</a></li>
+                <li><a href="all_Orders.html">· 全部订单</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_final">
+            <h3><a><i></i>财务管理<em></em></a></h3>
+            <ul>
+                <li class="on"><a href="recharge.html">· 充值</a></li>
+                <li><a href="withdrawals.html">· 提现</a></li>
+                <li><a href="exchange.html">· 积分兑换</a></li>
+                <li><a href="reward_Details.html">· 代理商奖励明细</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_info">
+            <h3><a><i></i>会员信息<em></em></a></h3>
+            <ul>
+                <li><a href="essential_Information.html">· 基本信息</a></li>
+                <li><a href="my_News.html">· 我的消息</a></li>
+                <li><a href="my_Shares.html">· 我的分享</a></li>
+                <li><a href="change_Password.html">· 修改登录密码</a></li>
+                <li><a href="set_Transpassword1.html">· 设置交易密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--右侧内容-->
+        <div class="pcontent vip_center fl" style="background: #FFFFFF;">
+            <div class="pcontentR">
+                <div class="pcontentRbox widthdrawals">
+                	<h3 class="pcontentRTitle clearfix">
+                		<p class="fl on">充值到银行卡</p>
+                	</h3>
+                	<div class="widthdrawalsbox recardbox">
+                		<div class="recardbox_head clearfix">
+	                		<p>充值金额：<span class="red">188元</span></p>
+	                		<p>姓名：<span>Angelina</span></p>
+		                    <p>手机：<span>1538952088</span></p>
+	                    </div>
+                    	<form>
+                    		<ul>
+                    			<li>
+                    				<label>支付金额：</label>
+                    				<input type="text" placeholder="请输入要支付的金额" />元
+                    			</li>
+                    			<li style="margin-bottom: 15px;">
+                    				<label>支付方式：</label>
+                    				<a class="wid_bank"><img src="../../images/static/ali_logo.png"/>支付宝</a>
+                    				<a class="wid_bank"><img src="../../images/static/wechat_logo.png"/>微信</a>
+			                    	<a class="wid_bank"><img src="../../images/static/boc_logo.png"/>中国银行</a>
+			                    	<a class="wid_bank"><img src="../../images/static/icbc_logo.png"/>中国工商银行</a>
+			                    	<a class="wid_bank" style="margin-left: 85px;"><img src="../../images/static/abc_logo.png"/>中国农业银行</a>
+			                    	<a class="wid_bank"><img src="../../images/static/post_logo.png"/>中国邮政</a>
+			                    	<a class="wid_bank"><img src="../../images/static/cib_logo.png"/>交通银行</a>
+			                    	<a class="wid_bank"><img src="../../images/static/ccb_logo.png"/>中国建设银行</a>
+			                    	<a class="wid_bank" style="margin-left: 85px;"><img style="height: 20px;" src="../../images/static/otb_logo.png"/>其他银行</a>
+                    			</li>
+	                    		<li>
+	                    			<label>支付卡号：</label>
+	                    		    <input type="text" placeholder="请输入银行卡号" />
+	                    		</li>
+	                    		<li>
+	                    			<label>支付姓名：</label>
+	                    		    <input type="text" placeholder="请输入支付姓名" />
+	                    		</li>
+	                    		<li class="pay_date">
+	                    			<label>支付时间：</label>
+	                    		    <input type="text" placeholder="请输入支付成功的时间" />元
+	                    		</li>
+                    		</ul>
+                    		<a class="wid_btn" href="###">提交</a>
+                    	</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".widthdrawalsbox li a").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
+</script>
+</html>

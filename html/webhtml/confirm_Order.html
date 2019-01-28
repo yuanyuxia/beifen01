@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>确认订单</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+</head>
+<body style="background: #EEEEEE;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>6</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="w12 shop_cart clearfix">
+	<div class="cart_head clearfix">
+		<p><span>1</span> 我的购物车  ——— <span>2</span> 填写核对订单信息  ——— <span>3</span> 成功提交订单</p>
+	</div>
+    <div class="confirm_con divshadow">
+    	<p class="con_head">填写核对订单信息</p>
+    	<div class="consignee">
+    		<p class="consignee_head">收货人信息</p>
+    		<div class="consignee_con">
+    			<span class="consignee_span1"><img src="../../images/static/position.png" />寄送至</span>
+    			<span class="consignee_span2">河南省  郑州市  高新技术开发区  升龙又一城B区2号楼501室 </span>
+    			<span class="consignee_span3">（张晓蒙） 收</span>
+    			<a class="edit" href="###">修改</a>
+    		</div>
+    	</div>
+    </div>
+    <div class="confirm_con order_con">
+    	<p class="con_head">商品清单<a href="shoppingcart_Declaration.html">返回购物车修改</a></p>
+    	<table>
+    		<thead>
+	    		<tr>
+	    			<th></th>
+	    			<th>商品</th>
+	    			<th>商品属性</th>
+	    			<th>单价（元）</th>
+	    			<th>数量</th>
+	    			<th>金额</th>
+	    		</tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+	    			<td class="wid_sixty"><a href="product_Details.html"><img src="../../images/testimg/td_pro1.png"></a></td>
+	    			<td>
+	    				<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml</a>
+	    			</td>
+	    			<td><p class="specifications">颜色：粉色</p><p class="specifications">容量：750ml</p></td>
+	    			<td>316.00</td>
+	    			<td>2</td>
+	    			<td class="ziti">632积分</td>
+	    		</tr>
+	    		<tr class="messages_tr">
+	    			<td colspan="6">
+	    				<form>
+			    			<label>给卖家留言：</label>
+			    			<textarea>我要的粉色，请不要弄错了，请赶快发货哦！</textarea>
+				    		<span>20/100</span>
+			    		</form>
+	    			</td>
+	    		</tr>
+    		</tbody>
+    	</table>
+    	<div class="detailed_list clearfix">
+    		<div class="">
+	    		<p class="aggregate"><span>1</span>件商品，总商品金额：632积分</p>
+	    		<p class="freight">运费：&nbsp;&nbsp;&nbsp;&nbsp;<span>免运费</span></p>
+    		</div>
+    	</div>
+    	<div class="adress">
+    		<p>寄送至：<span>河南省  郑州市  高新技术开发区  升龙又一城B区2号楼501室</span></p>
+    		<p>收件人：<span>张晓蒙  15538904122</span></p>
+    		<p class="payables">应付总额：<span>632积分</span><a href="#">去付款</a></p>
+    	</div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script>
+	$(function(){
+       $(".edit").click(function () {
+        layer.open({
+            type: 2,
+            //page层
+            skin: 'layui-layer-rim', //加上边框
+            area: ['620px', '500px'],
+            title: '编辑收货地址',
+            shade: 0.6,//遮罩透明度
+            shadeClose:true,//点击遮罩关闭层
+            moveType: 1,//拖拽风格，0是默认，1是传统拖动
+            fix:true,//不随滚动条滚动，一直在可视区域。
+            border:[0],
+            closeBtn:1,
+            content: ['essinfor_layer.html','no'],
+            success:function(layero,index){
+                var body = layer.getChildFrame("body",index);
+                body.find(".btn_qx").on("click",function(){
+                    layer.close(index);
+                });
+            }
+        });
+    });
+    });   
+</script>
+</html>

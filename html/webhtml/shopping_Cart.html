@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <!--<script type="text/javascript" src="../../js/base.js"></script>-->
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <style type="text/css">
+    	.checkAllIcon1,.checkAllIcon2,.checkAllIcon_fix1,.checkAllIcon_fix2 {
+		    display: inline-block;
+		    width: 12px;
+		    height: 12px;
+		    background: url(../../images/static/icons/icon_check4.png) no-repeat center;
+		    vertical-align: middle;
+		    margin-right: 24px;
+		}
+		.checkAllIcon1.active,.checkAllIcon2.active,.checkAllIcon_fix1.active,.checkAllIcon_fix2.active {
+		    display: inline-block;
+		    width: 12px;
+		    height: 12px;
+		    background: url(../../images/static/icons/icon_check3.png) no-repeat center;
+		    vertical-align: middle;
+		    margin-right: 24px;
+		}
+    </style>
+</head>
+<body style="background: #EEEEEE;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"><span class="gouwuche">购物车</span></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a>首页</a></li>
+            <li><a>报单超市</a></li>
+            <li><a>积分商城</a></li>
+            <li><a>APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="#">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>6</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="w12 shop_cart clearfix">
+	<div class="cart_head clearfix">
+		<p><span>1</span> 我的购物车  ——— <span>2</span> 填写核对订单信息  ——— <span>3</span> 成功提交订单</p>
+	</div>
+    <div class="cart_con">
+    	<h3 class="clearfix">
+    		<p class="on"><a href="#">报单商品<span>4</span></a></p>
+    		<p><a href="#">积分商品<span>2</span></a></p>
+    	</h3>
+    	<div class="cart_table">
+	    	<div class="cart_tab">
+		    	<p class="cart_th pconInfoTime">
+		        	<label class="checkAll qdscon"><i class="checkAllIcon1"></i>全选</label>
+		        	<label class="">商品信息 </label>
+		        	<label class="">单价(元)</label>
+		        	<label class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+		        	<label class="">金额</label>
+		        	<label class="">操作</label>
+		        </p>
+		        <div class="cart_list clearfix">
+		        	<p class="welfare"><span>买一赠一</span>买任意报单商品送罗利干红一瓶[价值240元]</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon active"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">632积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316.00</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <!--<div class="cart_list clearfix">
+		            <p class="welfare"><span>买一赠一</span>买任意报单商品送罗利干红一瓶[价值240元]</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic2.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="welfare"><span>买一赠一</span>买任意报单商品送罗利干红一瓶[价值240元]</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic3.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="welfare"><span>买一赠一</span>买任意报单商品送罗利干红一瓶[价值240元]</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic3.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>-->
+		        <div class="cart_list invalid clearfix">
+		            <p class="welfare"><span>失效商品</span>对不起，宝贝已失效</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic3.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">1</span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="settlement">
+		        	<label class="checkAll"><i class="checkAllIcon_fix1"></i>全选</label>
+		        	<a>批量删除</a>
+		        	<div class="settlementcon">
+			        	<span class="setcon_checked">已选商品<b>2</b>件</span>
+			        	<span class="setcon_total">总价（不含运费）：<b>632积分</b></span>
+			        	<a class="selt_btn" href="">去结算</a>
+		        	</div>
+		        </div>
+	        </div>
+	        <div class="cart_tab hide">
+		    	<p class="cart_th pconInfoTime">
+		        	<label class="checkAll qdscon"><i class="checkAllIcon2"></i>全选</label>
+		        	<label class="">商品信息 </label>
+		        	<label class="">单价(元)</label>
+		        	<label class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量</label>
+		        	<label class="">金额</label>
+		        	<label class="">操作</label>
+		        </p>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon active"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic3.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">632积分</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316.00</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic2.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="cart_list clearfix">
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+			            	<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+			            	<b>有货</b>
+		            	</form>
+		            </span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+				<div class="cart_list clearfix">
+					<p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+					<div class="cartlist_pro f1 pconInfoTime">
+						<i class="checkAllIcon"></i>
+						<img class="cancelImg" src="../../images/testimg/cancelpic1.png">
+						<div class="cancelInfo">
+							<p>罗利干红500ml</p>
+							<p>罗利干红500ml</p>
+							<span>颜色：粉色</span><br />
+							<span>容量：750ml</span>
+						</div>
+					</div>
+					<span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">
+		            	<form>
+							<a class="reduce">-</a><input type="text" value="2"/><a class="add">+</a>
+							<b>有货</b>
+						</form>
+		            </span>
+					<span class="cartlistpro_con ziti">316积分</span>
+					<span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+				</div>
+		        <div class="cart_list invalid clearfix">
+		            <p class="welfare"><span class="invalid">失效商品</span>对不起，宝贝已失效</p>
+		            <p class="collectiondate">收藏时间：<span>2015-01-02  13:47:40</span></p>
+		            <div class="cartlist_pro f1 pconInfoTime">
+		               <i class="checkAllIcon"></i>
+		               <img class="cancelImg" src="../../images/testimg/cancelpic3.png">
+		               	<div class="cancelInfo">
+		                	<p>罗利干红500ml</p>
+		                	<p>罗利干红500ml</p>
+		                	<span>颜色：粉色</span><br />
+		                	<span>容量：750ml</span>
+		                </div>
+		            </div>
+		            <span class="cartlistpro_con">316.00</span>
+		            <span class="cartlistpro_con clinput">1</span>
+		            <span class="cartlistpro_con ziti">316积分</span>
+		            <span class="cartlistpro_con"><a class="delete" href="###">删除</a></span>
+		        </div>
+		        <div class="settlement">
+		        	<label class="checkAll"><i class="checkAllIcon_fix2"></i>全选</label>
+		        	<a>批量删除</a>
+		        	<div class="settlementcon">
+			        	<span class="setcon_checked">已选商品<b>2</b>件</span>
+			        	<span class="setcon_total">总价（不含运费）：<b>632积分</b></span>
+			        	<a class="selt_btn" href="">去结算</a>
+		        	</div>
+		        </div>
+	        </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script>
+	$(function(){
+        $(".cart_con h3 p").on("click",function(){
+        	var i = $(this).index();
+            $(this).addClass("on").siblings().removeClass("on");
+            $('.cart_tab').eq(i).show().siblings().hide();
+        });
+    });
+    
+    $(document).ready(function(){
+		$(".add").click(function(){
+			var oldValue=parseInt($(this).prev("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      oldValue++;//自加1
+                      $(this).prev("input").val(oldValue);//将增加后的值付给原控件
+		});
+		$(".reduce").click(function(){
+			var oldValue=parseInt($(this).next("input").val());//取出现在的值，并使用parseInt转为int类型数据
+                      oldValue--;//自减1
+                      $(this).next("input").val(oldValue);//将增加后的值付给原控件
+		});
+	});
+	
+	
+	$(".checkAllIcon").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    $(".checkAllIcon1,.checkAllIcon2").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    $(".checkAllIcon_fix1,.checkAllIcon_fix2").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    
+    $(".checkAll .checkAllIcon1").on("click",function(){
+        for(var i = 0;i < $(".pconInfoTime .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon1").hasClass("active")){
+                $(".pconInfoTime .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon_fix1").addClass("active");
+            }else{
+                $(".pconInfoTime .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon_fix1").removeClass("active");
+            }
+        }
+    });
+    $(".checkAll .checkAllIcon_fix1").on("click",function(){
+        for(var i = 0;i < $(".pconInfoTime .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon_fix1").hasClass("active")){
+                $(".pconInfoTime .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon1").addClass("active");
+            }else{
+                $(".pconInfoTime .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon1").removeClass("active");
+            }
+        }
+    });
+    $(".checkAll .checkAllIcon2").on("click",function(){
+        for(var i = 0;i < $(".pconInfoTime .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon2").hasClass("active")){
+                $(".pconInfoTime .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon_fix2").addClass("active");
+            }else{
+                $(".pconInfoTime .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon_fix2").removeClass("active");
+            }
+        }
+    });
+    $(".checkAll .checkAllIcon_fix2").on("click",function(){
+        for(var i = 0;i < $(".pconInfoTime .checkAllIcon").length;i++){
+            if($(".checkAll .checkAllIcon_fix2").hasClass("active")){
+                $(".pconInfoTime .checkAllIcon").addClass("active");
+                $(".checkAll .checkAllIcon2").addClass("active");
+            }else{
+                $(".pconInfoTime .checkAllIcon").removeClass("active");
+                $(".checkAll .checkAllIcon2").removeClass("active");
+            }
+        }
+    });
+    $(".pconInfoTime .checkAllIcon").on("click",function(){
+        for(var i = 0;i < $(".pconInfoTime .checkAllIcon").length;i++){
+            if($(".pconInfoTime .checkAllIcon.active").length == $(".pconInfoTime .checkAllIcon").length){
+                $(".checkAll .checkAllIcon1,.checkAll .checkAllIcon_fix1").addClass("active");
+                $(".checkAll .checkAllIcon2,.checkAll .checkAllIcon_fix2").addClass("active");
+            }else{
+                $(".checkAll .checkAllIcon1,.checkAll .checkAllIcon_fix1").removeClass("active");
+                $(".checkAll .checkAllIcon2,.checkAll .checkAllIcon_fix2").removeClass("active");
+            }
+        }
+    });
+	
+	$(function(){
+		var height = $(window).height();
+		var body = $(document.body).height();
+		var i = body-height
+		$(window).scroll(function() { //侦听滚动时 
+	        var scrolls = $(window).scrollTop()+i; 
+	        if (height > scrolls) { //如果滚动到页面超出了当前元素element的相对页面顶部的高度 
+	                $(".settlement").css({"position":"fixed","bottom":"0px"});
+	            } 
+	        else { 
+	            $(".settlement").css({"position":"relative"});
+	        } 
+	    }); 
+	})
+	 
+	
+	/*$.fn.smartFloat = function() { 
+    var position = function(element) { 
+        var height = $(window).height(); //当前元素对象element距离浏览器上边缘的距离
+        var pos = element.css("position");
+        $(window).scroll(function() { //侦听滚动时 
+            var scrolls = $(window).scrollTop(); 
+            
+            if (height < scrolls) { //如果滚动到页面超出了当前元素element的相对页面顶部的高度 
+                    element.css({ //设置css 
+                        position: pos,
+                    }); 
+                } 
+            else { 
+                element.css({ //如果当前元素element未滚动到浏览器上边缘，则使用默认样式 
+                    position: "fixed",
+                    bottom:"0"
+                });
+            } 
+        }); 
+    }; 
+    return $(this).each(function() { 
+        position($(this));                          
+    }); 
+}; 
+	$(function(){ 
+    $(".settlement").smartFloat(); 
+}); */
+	
+</script>
+</html>

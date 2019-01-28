@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>平台管理-网站管理-轮播管理-添加轮播弹窗</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/upload.js"></script>
+</head>
+<body>
+<div class="psite_add">
+    <form class="psite_form">
+        <div>
+            <label>排序：</label><input class="psite_paixu" type="text">
+            <small class="psite_tips"><em>*</em>请排序</small>
+        </div>
+        <div class="psite_upload">
+            <label>轮播图：</label><p><span class="psite_upfile" id="doc7"><img class="fileImg7" src=""><input id="inp7" type="file"></span></p>
+            <small class="psite_tips">
+                <em>*</em>请上传本地图片，大小不超过3M,格式为jpg、png、gif或bmp格式
+            </small>
+        </div>
+        <div>
+            <label>链接地址：</label><input type="text">
+            <small class="psite_tips"><em>*</em>请输入正确的链接地址</small>
+        </div>
+        <div>
+            <label>商品ID：</label><input class="psite_paixu" type="text">
+        </div>
+        <div class="psiteSbtn"><a class="psite_submit">提交</a></div>
+    </form>
+</div>
+<script type="text/javascript">
+    $(function(){
+        //图片预览
+        $("#inp7").change(function(){//----input
+            var imgObj = $(".fileImg7");//--img
+            var inputObj=$("#inp7"); //----input
+            var spanObj = $("#doc7");//----外层
+            showImg.showImage(this,imgObj,inputObj,spanObj);
+            imgObj.prop("src") == ""?imgObj.css("display","none"):imgObj.css("display","inline-block");
+            imgObj.css({"width":"320px","height":"180px"});
+        });
+    });
+</script>
+</body>
+</html>

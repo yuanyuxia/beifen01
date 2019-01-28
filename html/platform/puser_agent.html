@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>平台管理-会员管理-代理商会员</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body>
+<!--头部-->
+<div class="phead">
+    <div class="phead_top">
+        <div class="phead_topc w12 clearfix">
+            <div class="phead_topl fl">欢迎来到中易通管理平台！<span>张萌萌</span><a>退出</a></div>
+            <div class="phead_topr fr"><a href="../webhtml/integral.html">商城</a><a href="../webhtml/personal_Center.html">个人中心</a><a href="#">手机版</a><a href="#">收藏本站</a></div>
+        </div>
+    </div>
+    <div class="phead_nav">
+        <div class="pheadC w12 clearfix">
+            <a class="h_logo fl"><img src="../../images/static/icons/platLogo.png"><h3>中意通管理平台</h3></a>
+            <ul class="nav fl">
+                <li class="on"><a href="plat_index.html">首页</a></li>
+                <li><a href="psite_male.html">全国公排</a></li>
+                <li><a href="platNotice.html">通知公告</a></li>
+                <li><a href="plat_changepassword.html">密码修改</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="pcenter w12">
+    <div class="pcenterT"><a>首页</a>><a>会员管理</a>><a class="on">代理商会员</a></div>
+    <div class="pcenterC clearfix">
+        <!--左侧导航-->
+        <div class="pnav divshadow fl">
+            <h2><a><i></i>首页</a></h2>
+            <div class="pnav_item pnav_deal">
+                <h3><a><i></i>交易管理<em></em></a></h3>
+                <ul>
+                    <li><a href="pdeal_pendingPayment.html">待付款</a></li>
+                    <li><a href="pdeal_shipmentPending.html">待发货</a></li>
+                    <li><a href="pdeal_shipedOrder.html">已发货</a></li>
+                    <li><a href="pdeal_cancelOrder.html">被取消</a></li>
+                    <li><a href="pdeal_successOrder.html">成功的订单</a></li>
+                    <li><a href="pdeal_closedOrder.html">关闭的订单</a></li>
+                    <li><a href="pdeal_allOrder.html">所有订单</a></li>
+                </ul>
+            </div>
+            <div class="pnav_item pnav_goods">
+                <h3><a><i></i>商品管理<em></em></a></h3>
+                <ul>
+                    <li><a href="platIntegral.html">发布报单商品</a></li>
+                    <li><a href="platArrival.html">发布抵值商品</a></li>
+                    <li><a href="platGoodsManage.html">货架管理</a></li>
+                </ul>
+            </div>
+            <div class="pnav_item pnav_site">
+                <h3><a><i></i>网站管理<em></em></a></h3>
+                <ul>
+                    <li><a href="platSiteManage.html">轮播管理</a></li>
+                    <!--<li><a href="psite_index.html">首页推荐</a></li>-->
+                    <li><a href="platNotice.html">通知公告</a></li>
+                    <li><a href="platAgreement.html">协议管理</a></li>
+                    <!--<li><a>系统消息</a></li>-->
+                    <li><a href="psite_male.html">全国公排</a></li>
+                </ul>
+            </div>
+            <div class="pnav_item pnav_finance">
+                <h3><a><i></i>财务管理<em></em></a></h3>
+                <ul>
+                    <li><a href="pfinal_offlineRecharge.html">线下充值</a></li>
+                    <li><a href="pfinal_toExamine.html">充值到银行卡审核</a></li>
+                    <li><a href="pfinal_receivablesCard.html">收款到银行卡</a></li>
+                    <li><a href="pfinal_rechargeDetails.html">充值明细</a></li>
+                    <li><a href="pfinal_rechargeRules.html">充值规则</a></li>
+                    <li><a href="pfinal_cashChecking.html">提现审核</a></li>
+                    <li><a href="pfinal_withdrawalsRules.html">提现规则</a></li>
+                    <li><a href="pfinal_transactionDetails.html">交易明细</a></li>
+                    <li><a href="pfinal_comprehensiveSummary.html">综合汇总</a></li>
+                </ul>
+            </div>
+            <div class="pnav_item pnav_vip">
+                <h3><a><i></i>会员管理<em></em></a></h3>
+                <ul>
+                    <li><a href="puser_normal.html">普通会员</a></li>
+                    <li class="on"><a href="puser_agent.html">代理商会员</a></li>
+                    <li><a href="puser_addAgent.html">添加代理商</a></li>
+                </ul>
+            </div>
+            <div class="pnav_item pnav_safe">
+                <h3><a><i></i>安全管理<em></em></a></h3>
+                <ul>
+                    <li><a href="psafe_admin.html">管理员管理</a></li>
+                    <li><a href="psafe_jurisdiction.html">权限管理</a></li>
+                    <li><a href="psafe_addAdmin.html">添加管理员</a></li>
+                    <li><a href="psafe_operat.html">操作日志</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧内容-->
+        <div class="pcontent fl divshadow">
+            <div class="pcontentR">
+                <div class="pcontentRbox">
+                    <h3 class="pcontentRTitle clearfix">
+                    	<p class="fl">代理商会员</p>
+                    	<p class="details">总人数：<span>5000人</span></p>
+                    </h3>
+                    <div class="pconInpBox">
+                        <label class="pconInp">账号:<input type="text"></label><label class="pconInp">姓名:<input type="text"></label><a class="pconInpBtn">查询</a>
+                    </div>
+                    <div class="pcon_table">
+                        <table>
+                            <thead>
+                            <tr class="checkBaner">
+                                <th style="padding-left: 19px;" colspan="9"><i class="checkAllIcon checkAllIcon_normal"></i>全选<a class="psite_addslider">解除冻结</a></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>ID号</th>
+                                <th>姓名</th>
+                                <th>账号</th>
+                                <th>账号</th>
+                                <th>账号</th>
+                                <th>注册时间</th>
+                                <th>状态</th>
+                                <th class="ptable_option_th">操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>县代理</td>
+                                <td>中牟县</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p></td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>市代理</td>
+                                <td>南阳市</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p class="disable">冻结</p> </td>
+                                <td class="ptable_option"><a href="#" class="frozen_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p class="disable">冻结</p> </td>
+                                <td class="ptable_option"><a href="#" class="frozen_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            <tr>
+                                <td class="check_td"><i class="checkAllIcon checkAllIcon_first"></i></td>
+                                <td>123456</td>
+                                <td class="pcon_pic"><p>阿吉古丽</p></td>
+                                <td><p>13625062256</p></td>
+                                <td>省代理</td>
+                                <td>河南省</td>
+                                <td class="pcon_time"><a>2016-9-12</a> <a>08:59:59</a> </td>
+                                <td class="pcon_time"><p>正常</p> </td>
+                                <td class="ptable_option"><a href="#" class="normal_details">详情</a><a>冻结</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="clearfix pcon_pagnation">
+                            <p class="fl">第1/4页, 每页10条, 共39条记录</p>
+                            <div class="fr"><span><a>首页</a></span><span><a>上一页</a></span><a>1</a><a class="on">2</a><a>3</a><a>4</a><span>...</span><span><a>下一页</a></span><span><a>尾页</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+//      $(".checkAllIcon").on("click",function(){
+//          $(this).toggleClass("active");
+//      });
+        //添加轮播弹窗
+        $(".psite_addslider").on("click",function () {
+            layer.open({
+                type:2,
+                title:["添加轮播","font-weight:bold;"],
+                area:["694px","513px"],
+                content:["platSiteManage_iframe.html","no"]
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+	$(function(){
+       $(".normal_details").click(function () {
+        layer.open({
+            type: 2,
+            //page层
+            area: ['500px', '240px'],
+            title: '',
+            shade: 0.6,//遮罩透明度
+            shadeClose:true,//点击遮罩关闭层
+            moveType: 1,//拖拽风格，0是默认，1是传统拖动
+            fix:true,//不随滚动条滚动，一直在可视区域。
+            border:[0],
+            closeBtn:1,
+            content: ['puser_agent_iframe2.html','no'],
+            success: function(layero, index) {
+		        layer.iframeAuto(index);
+		    }
+        });
+    });
+    });   
+    
+    $(function(){
+       $(".frozen_details").click(function () {
+        layer.open({
+            type: 2,
+            //page层
+            area: ['500px', '280px'],
+            title: '',
+            shade: 0.6,//遮罩透明度
+            shadeClose:true,//点击遮罩关闭层
+            moveType: 1,//拖拽风格，0是默认，1是传统拖动
+            fix:true,//不随滚动条滚动，一直在可视区域。
+            border:[0],
+            closeBtn:1,
+            content: ['puser_agent_iframe1.html','no'],
+            success: function(layero, index) {
+		        layer.iframeAuto(index);
+		    }
+        });
+    });
+    });
+</script>
+</body>
+</html>

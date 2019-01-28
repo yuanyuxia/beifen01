@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>登录</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body>
+<div class="login">
+    <div class="loginHeader divshadow">
+        <div class="loginHeaderCon w12">
+            <a href="index.html"><img src="../../images/static/icons/icon_logo.png" class="l_logo" /></a>
+            <span>188惠民工程</span>
+        </div>
+    </div>
+    <div class="loginCon">
+        <div class="loginConBg">
+            <ul>
+                <li><img src="../../images/static/login_bg.png"></li>
+            </ul>
+        </div>
+        <div class="loginConForm">
+            <h2 class="loginTitle">会员登录</h2>
+            <form>
+                <div class="loginDiv loginNum"><label></label><input type="text" placeholder="请输入手机号"></div>
+                <div class="loginDiv loginPsd"><label></label><input type="password" placeholder="请输入密码"></div>
+                <div class="loginBtn"><a href="index.html">立即登录</a></div>
+                <div class="loginForget"><a class="loginForgetA1">忘记密码？</a><a  class="loginForgetA2" href="regist.html">立即注册</a></div>
+            </form>
+        </div>
+    </div>
+    <!--页脚-->
+    <div class="loginFooter">
+        <p class="w12"><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+        $(window).load(function () {
+            footerPos();
+        });
+        $(window).resize(function () {
+            footerPos();
+        });
+        function footerPos() {
+            var windowH = $(window).outerHeight();
+            var footerH = $(".loginFooter").outerHeight();
+            var headerH = $(".loginHeader").outerHeight();
+            var middleH = windowH-footerH-headerH-16;
+            //console.log(middleH);
+            if(middleH>700){
+                $(".loginCon").css({"height":middleH+"px"});
+            }else{
+                $(".loginCon").css({"height":"742px"});
+            }
+        };
+        $(function(){
+    	/*失去焦点输入框变色*/
+    	for(var i=0;i<$("form .loginDiv input").length;i++){
+    		$("form .loginDiv input").focus(function(){
+	    		$(this).parents(".loginDiv").css("border","1px solid #dc3336");
+	    	});
+	    	$("form .loginDiv input").blur(function(){
+	    		$(this).parents(".loginDiv").css("border","1px solid #ddd");
+	    	});
+    	}
+    	
+    });
+</script>
+</body>
+</html>

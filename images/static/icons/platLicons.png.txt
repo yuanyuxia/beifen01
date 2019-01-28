@@ -1,0 +1,6 @@
+platA.png, 20, 20, 0, 0
+platC.png, 20, 20, 26, 0
+platG.png, 20, 20, 52, 0
+platH.png, 20, 20, 78, 0
+platJ.png, 20, 20, 104, 0
+platW.png, 20, 20, 130, 0

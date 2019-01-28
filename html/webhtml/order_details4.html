@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>已完成-详情</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body style="background: #F1F1F1;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>2</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="qcenter w12 clearfix">
+    <!--左侧导航-->
+    <div class="qnav fl">
+        <h2 class="divshadow userCen"><a href="personal_Center.html"><i></i>会员中心</a></h2>
+        <div class="qnav_item qnav_indent">
+            <h3><a><i></i>我的订单<em></em></a></h3>
+            <ul>
+                <li><a href="qindentPay.html">· 待付款</a></li>
+                <li><a href="qindentSend.html">· 待发货</a></li>
+                <li><a href="qindentReceive.html">· 待收货</a></li>
+                <li class="on"><a href="completed_Orders.html">· 已完成</a></li>
+                <li><a href="all_Orders.html">· 全部订单</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_final">
+            <h3><a><i></i>财务管理<em></em></a></h3>
+            <ul>
+                <li><a href="recharge.html">· 充值</a></li>
+                <li><a href="withdrawals.html">· 提现</a></li>
+                <li><a href="exchange.html">· 积分兑换</a></li>
+                <li><a href="reward_Details.html">· 代理商奖励明细</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_info">
+            <h3><a><i></i>会员信息<em></em></a></h3>
+            <ul>
+                <li><a href="essential_Information.html">· 基本信息</a></li>
+                <li><a href="my_News.html">· 我的消息</a></li>
+                <li><a href="my_Shares.html">· 我的分享</a></li>
+                <li><a href="change_Password.html">· 修改登录密码</a></li>
+                <li><a href="set_Transpassword1.html">· 设置交易密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--右侧内容-->
+        <div class="pcontent vip_center fl">
+            <div class="pcontentR">
+                <div class="pcontentRbox">
+                	<img class="resteps" src="../../images/static/resteps4.png" />
+                    <div class="order_xq">
+                    	<h4><span>订单详情</span></h4>
+                    	<p class="order_bh">订单编号：<span>201501568920100</span></p>
+                    	<span>状态：<b class="paid">已收货</b></span>
+                    	<div class="clearfix"></div>
+                    	<p class="">收货信息：<span>河南省  郑州市  高新技术开发区  升龙又一城B区2号楼501室（张晓蒙 收）   15538904122</span></p>
+                    	<p>支付方式：<span>账户余额</span></p>
+                    	<p>下单时间：<span>2017-06-22 15:42:05</span></p>
+                    	<p>付款时间：<span>2017-06-22 15:45:05</span></p>
+                    </div>
+                    <div class="logistics">
+                    	<h4><span>物流详情</span></h4>
+                    	<p>物流公司：<span>申通快递</span></p>
+                    	<p>物流单号：<span>885510632262590152</span></p>
+                    </div>
+                    <div class="prolist order_con">
+                    	<h4><span>商品清单</span></h4>
+                    	<table>
+				    		<thead class="details_thead">
+					    		<tr>
+					    			<th></th>
+					    			<th>商品</th>
+					    			<th>单价（元）</th>
+					    			<th>数量</th>
+					    			<th>金额</th>
+					    		</tr>
+				    		</thead>
+				    		<tbody>
+				    			<tr>
+					    			<td class="wid_sixty"><a href="product_Details.html"><img src="../../images/testimg/td_pro1.png"></a></td>
+					    			<td>
+					    				<a href="product_Details.html">罗利干红500ml<br/>罗利干红500ml<br/><span class="guige">规格：500ml</span></a>
+					    			</td>
+					    			<td>316.00</td>
+					    			<td>2</td>
+					    			<td class="ziti">632积分</td>
+					    		</tr>
+					    		<tr style="height: 30px;">
+					    			<td colspan="5"><p>给卖家留言:<span>我要的粉色，请不要弄错了，请赶快发货哦！</span></p></td>
+					    		</tr>
+				    		</tbody>
+				    	</table>
+				    	<div class="detailed_list">
+				    		<div class="">
+					    		<p class="aggregate"><span>1</span>件商品，总商品金额：632积分</p>
+					    		<p class="freight">运费：&nbsp;&nbsp;&nbsp;&nbsp;<span>免运费</span></p>
+				    		</div>
+				    	</div>
+				    	<div class="clearfix"></div>
+				    	<div class="adress">
+				    		<p class="">订单金额：<span>632积分</span></p>
+				    	</div>
+				    	<div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+</html>

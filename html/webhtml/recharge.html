@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" >
+    <title>充值</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script type="text/javascript" src="../../libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../libs/layer/layer.js"></script>
+</head>
+<body style="background: #F1F1F1;">
+<!--头部-->
+<div class="indexHeader">
+    <div class="indexHeaderC w12 clearfix">
+        <a href="index.html" class="indexh_logo fl"><img src="../../images/static/icons/icon_logo.png"></a>
+        <ul class="indexNav fl">
+            <li class="on first"><a href="index.html">首页</a></li>
+            <li><a href="supermarket.html">报单超市</a></li>
+            <li><a href="integral.html">积分商城</a></li>
+            <li><a href="app_Load.html">APP下载</a></li>
+        </ul>
+        <!--未登录状态-->
+        <div class="indexStatus fr hide">
+            <a class="indexBtn on" href="login.html"><i></i>登录</a>
+            <a class="indexBtn" href="register.html">注册</a>
+        </div>
+        <div class="shopping_cart">
+        	<a href="shoppingcart_Declaration.html">
+        		<img src="../../images/static/shopping_cart.png">
+        		<span>2</span>	
+        	</a>
+        </div>
+        <!--登录状态-->
+        <div class="indexStatus fr">
+            <a><img src="../../images/testimg/headImg.png" class="h_Favicon"></a>
+            <span class="indexName">Angular</span>
+            <i class="h_arrow_down"></i>
+            <ul class="hide">
+            	<li class="user_center"><a href="personal_Center.html">会员中心</a></li>
+            	<li class="quit"><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--内容-->
+<div class="qcenter w12 clearfix">
+    <!--左侧导航-->
+    <div class="qnav fl">
+        <h2 class="divshadow userCen"><a href="personal_Center.html"><i></i>会员中心</a></h2>
+        <div class="qnav_item qnav_indent">
+            <h3><a><i></i>我的订单<em></em></a></h3>
+            <ul>
+                <li><a href="qindentPay.html">· 待付款</a></li>
+                <li><a href="qindentSend.html">· 待发货</a></li>
+                <li><a href="qindentReceive.html">· 待收货</a></li>
+                <li><a href="completed_Orders.html">· 已完成</a></li>
+                <li><a href="all_Orders.html">· 全部订单</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_final">
+            <h3><a><i></i>财务管理<em></em></a></h3>
+            <ul>
+                <li class="on"><a href="recharge.html">· 充值</a></li>
+                <li><a href="withdrawals.html">· 提现</a></li>
+                <li><a href="exchange.html">· 积分兑换</a></li>
+                <li><a href="reward_Details.html">· 代理商奖励明细</a></li>
+            </ul>
+        </div>
+        <div class="qnav_item qnav_info">
+            <h3><a><i></i>会员信息<em></em></a></h3>
+            <ul>
+                <li><a href="essential_Information.html">· 基本信息</a></li>
+                <li><a href="my_News.html">· 我的消息</a></li>
+                <li><a href="my_Shares.html">· 我的分享</a></li>
+                <li><a href="change_Password.html">· 修改登录密码</a></li>
+                <li><a href="set_Transpassword1.html">· 设置交易密码</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--右侧内容-->
+        <div class="pcontent vip_center fl" style="background: #FFFFFF;">
+            <div class="pcontentR">
+                <div class="pcontentRbox cz_head">
+                	<h3 class="pcontentRTitle clearfix">
+                		<p class="fl on"><a href="recharge.html">充值</a></p>
+                		<p class="fl"><a href="recharge_Details.html">充值明细</a></p>
+                	</h3>
+                	<div class="rechargebox">
+	                    <p class="re_name">姓名：<span>Angelina</span></p>
+	                    <p class="re_phone">手机：<span>1538952088</span></p>
+                    	<form>
+                    		<label>请选择充值金额：</label>
+                    		<a>10元</a>
+                    		<a>150元</a>
+                    		<a>100元</a>
+                    		<a>500元</a>
+                    		<a>1000元</a>
+                    		<span>
+                    			<input type="text" placeholder="其他金额" />元
+                    		</span>
+                    	</form>
+	                    <p class="re_amount">充值金额：<span>5000</span> 元</p>
+	                    <p class="re_pay">支付方式：
+	                    	<a><img src="../../images/static/ali_logo.png"/>支付宝</a>
+	                    	<a><img src="../../images/static/wechat_logo.png"/>微信</a>
+	                    </p>
+	                    <p class="re_card">充值到银行卡：
+	                    	<a><img src="../../images/static/ccb_logo.png"/>中国建设银行</a>
+	                    	<span>6228 2356 2541 563</span>
+	                    	<span>张国建</span>
+	                    </p>
+	                    <div class="recharge_agreement">
+	                    	<input type="checkbox"/>
+	                    	我已阅读并同意 <a class="agree">《会员充值协议书》</a>
+	                    </div>
+	                    <a class="rechage_btn" href="recharge_Card.html">立即充值</a>
+	                    <div class="re_prompt">
+	                    	<p>温馨提示：1、微信单笔最小充值金额20元；</p>
+	                    	<p>2、支付宝单笔最小充值金额5元；</p>
+	                    	<p>3、如有其它疑问请咨询客服，客服电话：0371-56680000。</p>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+<!--页脚-->
+<div class="loginFooter">
+    <p><a>©2017豫ICP备17003053号</a> | <a>版权归属：河南康途网络科技有限公司</a> | <a>技术支持：河南康途网络科技有限公司</a> | <a>举报电话：0371-6681098</a> | <a>邮箱：health519@sina.com</a></p>
+</div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".rechargebox form a").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+        $(".rechargebox form span").on("click",function(){
+            $(".rechargebox form a").removeClass("active");
+        });
+        $(".re_pay a").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active").parent().next().find("a").removeClass("active");
+        });
+        $(".re_card a").on("click",function(){
+            $(this).addClass("active").parent().prev().find("a").removeClass("active");
+        });
+    });
+    
+    $(function(){
+       $(".agree").click(function () {
+        layer.open({
+            type: 2,
+            //page层
+            area: ['950px', '600px'],
+            title: '充值协议',
+            shade: 0.6,//遮罩透明度
+            shadeClose:true,//点击遮罩关闭层
+            moveType: 1,//拖拽风格，0是默认，1是传统拖动
+            fix:true,//不随滚动条滚动，一直在可视区域。
+            border:[0],
+            closeBtn:1,
+            content: ['recharge_agreement.html'],
+        });
+    });
+    }); 
+</script>
+</html>

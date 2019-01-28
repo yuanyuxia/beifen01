@@ -1,0 +1,30 @@
+* { margin: 0;padding: 0;outline: none;}
+body {background-color: #edf2f2; font: 14px/1.5 "微软雅黑","Microsoft YaHei","宋体"; color: #333333; min-width: 1200px; /*min-height: 579px !important; */-webkit-font-smoothing: antialiased;}
+ul,li { list-style: none;}
+img { border:none; vertical-align: middle;}
+a { cursor: pointer; color: inherit;display: inline-block;text-decoration: none;}
+ul { list-style-type: none;}
+.clearfix { *zoom:1; }/*清除浮动*/
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.fl { float: left;}/*向左浮动*/
+.fr { float: right;}/*向右浮动*/
+.box { box-sizing: border-box; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 9999px white inset; -webkit-appearance: none;}
+.hide { display: none;}/*取消显示*/
+.w12 { width: 1200px; margin: auto;}
+/*.commendiv { border:1px solid #e5e5e5; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; background-color: #fff;margin-top: 20px;}*/
+.divshadow { box-shadow: 0px 0px 8px rgba(177,177,177,0.3);}
+input,textarea,select{font-family: "微软雅黑","Microsoft YaHei","宋体"; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #999; font-family: "微软雅黑","Microsoft YaHei","宋体";}
+input::-moz-placeholder, textarea::-moz-placeholder { color:#999; font-family: "微软雅黑","Microsoft YaHei","宋体";}
+input::-moz-placeholder, textarea::-moz-placeholder { color:#999; font-family: "微软雅黑","Microsoft YaHei","宋体";}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#999; font-family: "微软雅黑","Microsoft YaHei","宋体";}
+.marginTop{margin-top: 20px;}
+.marginBottom{margin-bottom: 20px;}
+/*仿select*/
+.select { display: inline-block; width: 163px; height: 36px; line-height: 36px; border:1px solid #ddd; padding-left: 10px; vertical-align: middle; position: relative; background-color: #fff; border-radius: 3px;}
+.select i { position: absolute; width: 9px; height: 4px; right: 15px; top: 50%; margin-top: -2px; background: url("../images/static/icons/icon_arrow_bottom.png") no-repeat center;}
+.select.active i { background: url("../images/static/icons/icon_arrow_bottom.png") no-repeat center;}
+.select ul { display: none; position: absolute; width: 100% !important; max-height: 357px !important; overflow-y: auto; left: -1px !important; top:39px !important; background-color: inherit !important; color: inherit; z-index: 999 !important; padding: 5px 0px !important; border:1px solid #ddd !important; border-radius: 3px; }
+.select ul li { padding:0px 5px; }
+.select ul li.on,.select ul li:hover { background-color: #0088FE;color:#fff;}
